@@ -43,14 +43,5 @@ namespace EX1
                     item.WriteToFile(path);
             else File.WriteAllText(path, "None Result.");
         }
-
-        static public void WriteToFile(string path, List<FPTree> fpTreeSets)
-        {
-            if (File.Exists(path)) File.Delete(path);
-            if (fpTreeSets.Count != 0)
-                foreach (var item in fpTreeSets)
-                    item.WriteToFile(path);
-            else File.WriteAllText(path, "None Result.");
-        }
     }
 }

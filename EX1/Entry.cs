@@ -19,15 +19,14 @@ namespace EX1
                 @"C:\Users\13614\OneDrive\4\数据挖掘\实验\EX1\T1014D50K.dat",
                 @"C:\Users\13614\OneDrive\4\数据挖掘\实验\EX1\T1014D100K.dat",
             };
-            int[] minSup = new int[] { 15, 600, 800, 1000 };
+            int[] minSup = new int[] {  6,600, 800, 1000 };
             int useMinSup = minSup[0];
             string inPath = filePaths[0];
 
             // 从文件读入数据，写到内存里
             DataHelper.SetData(inPath);
 
-            //AP(inPath, filePaths, useMinSup);
-            FP(inPath, useMinSup);
+            AP(inPath, useMinSup);
 
             Console.WriteLine("end");
             Console.ReadLine();
@@ -43,10 +42,6 @@ namespace EX1
             DataHelper.WriteToFile(aprioriOutPath, allSets);
             // 展示支持度最高的频繁项集
             Apriori.ShowMaxSup(allSets);
-        }
-        static void FP(string inPath, int useMinSup)
-        {
-            FPTree a = new FPTree();
         }
     }
 }
