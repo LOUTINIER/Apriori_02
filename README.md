@@ -1,3 +1,3 @@
-# Apriori&FP-Tree_CSharp_01
-Apriori, FP-Tree,  Without Associate rules;
+# Apriori_CSharp_01
+Apriori,  Without Associate rules;
 C#;
