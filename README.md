@@ -1,3 +1,3 @@
-# Apriori_CSharp_01
+# Apriori_02
 Apriori,  Without Associate rules;
 C#;
